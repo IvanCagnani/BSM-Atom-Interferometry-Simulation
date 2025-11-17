@@ -1,0 +1,37 @@
+MATLAB
+
+Compiled MATLAB files (P-code)
+
+*.p
+
+MATLAB autosave files
+
+*.asv
+
+MATLAB App Installer files
+
+*.mlappinstall
+
+MATLAB Compiler Runtime
+
+_mcr_cache*/
+MCR_CACHE*/
+
+MATLAB call logs
+
+call_stack.log
+call_stack_.log
+java.log.
+
+MATLAB project files
+
+*.prj
+
+Simulink cache files
+
+*.slxc
+
+MATLAB code coverage reports
+
+*.html
+*.xml
