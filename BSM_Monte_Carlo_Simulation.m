@@ -12,7 +12,7 @@
 %
 % This script performs a Monte Carlo simulation to determine the
 % sensitivity of the proposed experiment assuming a
-% SUB-QUANTUM-LIMITED interferometer using squeezed light.
+% SUB-QUANTUM-LIMITED interferometer using spin squeezing.
 %
 % --- Methodology ---
 % 1.  A 4-point differential quadrature is used to algebraically
@@ -125,7 +125,7 @@ parfor i = 1:N_trials
     
     % --- Simulate one 4-point cycle (N_cycles_per_experiment = 1) ---
     
-    % Generate the SQUEEZED QPN noise for all 4 measurement types.
+    % Generate the quantum-enhanced QPN noise for all 4 measurement types.
     noise_A = randn * noise_per_shot_simultaneous;
     noise_B = randn * noise_per_shot_simultaneous;
     noise_C = randn * noise_per_shot_simultaneous;
