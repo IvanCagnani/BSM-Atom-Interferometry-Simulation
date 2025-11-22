@@ -3,8 +3,7 @@
 This repository contains the MATLAB simulation code used to generate the figures and sensitivity projections in the paper:
 
 A Background-Free Search for Physics Beyond the Standard Model Using Atom Interferometry  
-Ivan Cagnani (Linnaeus University)  
-\[Link to your paper (e.g., on arXiv) will go here\]
+Ivan Cagnani (Linnaeus University)
 
 ## **Code Files**
 
