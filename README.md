@@ -4,7 +4,6 @@ This repository contains the MATLAB simulation code used to generate the figures
 
 A Background-Free Search for Physics Beyond the Standard Model Using Atom Interferometry  
 Ivan Cagnani (Linnaeus University)  
-\[Link to your paper (e.g., on arXiv) will go here\]
 
 ## **Code Files**
 
