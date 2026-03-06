@@ -28,6 +28,8 @@ Using the true quantum phases established by the SSFM, the Monte Carlo engine si
 
 ## Output Visualizations
 
+![Atom Interferometer Dashboard](BSM_Search_Plots_Ivan_Cagnani_2026.png)
+
 Running the script automatically generates a publication-ready **3-Panel Dashboard**:
 1. **Ab Initio Spatial Separation:** Visualizes the probability density $|\psi(x)|^2$ at $t=T$, proving the fundamental $k$-odd parity of the spatial potentials.
 2. **Noise Rejection (Mid-Fringe):** Plots the active phase sweep of the simultaneous dual-isotope sequence, demonstrating unbiased covariance extraction in high-noise regimes.
