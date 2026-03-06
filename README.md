@@ -35,19 +35,14 @@ Running the script automatically generates a publication-ready **3-Panel Dashboa
 
 ## Code Files
 
-This simulation is provided in two formats. The `.m` file is the primary, recommended version.
-
-1. **`BSM_Monte_Carlo_Simulator.m`**
-   * **This is the primary, public-facing script for the project.**
-   * It is a plain-text MATLAB file, fully commented, and self-contained (phase extraction functions are embedded).
-   * Highly optimized, it completes a massive quantum simulation and 25,000 statistical cycles in under a minute on standard hardware.
-2. **`BSM_Monte_Carlo_Simulator.mlx`**
-   * This is the original MATLAB Live Script *development* file. It is not formatted for presentation.
-   * For the cleanest, most readable version of the code, please use the `.m` file.
+**`BSM_Search_Simulator_Ivan_Cagnani_2026.m`**
+* **This is the primary, public-facing script for the project.**
+* It is a plain-text MATLAB file, fully commented, and self-contained (phase extraction functions are embedded).
+* Highly optimized, it completes a massive quantum simulation and 25,000 statistical cycles in under a minute on standard hardware.
 
 ## How to Run
 
-1. Open the `.m` file in MATLAB.
+1. Open the `BSM_Search_Simulator_Ivan_Cagnani_2026.m` file in MATLAB.
 2. Click the **Run** button.
 3. The SSFM physics engine will compute the true phases (approx. 30–40 seconds).
 4. The Monte Carlo engine will execute the 25,000 cycles (approx. 5–10 seconds).
@@ -58,6 +53,4 @@ This simulation is provided in two formats. The `.m` file is the primary, recomm
 This code relies on native MATLAB FFT optimizations and requires a full desktop version of MATLAB (R2016b or newer). **It is not compatible with GNU Octave.**
 
 It requires the following toolbox:
-* **Statistics and Machine Learning Toolbox™** (specifically for the `fitdist` and `pdf` functions used to render the Gaussian fit on the final histogram). 
-
-*(Note: The Parallel Computing Toolbox dependency has been removed in this version because the $\mathcal{O}(N \log N)$ SSFM optimization and vectorized covariance estimators made the script fast enough to run sequentially on a single core).*
+* **Statistics and Machine Learning Toolbox™** (specifically for the `fitdist` and `pdf` functions used to render the Gaussian fit on the final histogram).
