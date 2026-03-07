@@ -1,4 +1,5 @@
 # Simulation Code: A Background-Free Search for Physics Beyond the Standard Model Using Atom Interferometry
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18896187.svg)](https://doi.org/10.5281/zenodo.18896187)
 
 This repository contains the advanced MATLAB simulation suite used to generate the data, projections, and figures for the paper:
 
