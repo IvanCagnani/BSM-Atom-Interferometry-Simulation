@@ -59,7 +59,7 @@ It requires the following toolbox:
 * **Statistics and Machine Learning Toolbox™** (specifically for the `fitdist` and `pdf` functions used to render the Gaussian fit on the final histogram).
 
 
-* ## Code Files
+## Code Files
 
 This repository contains two versions of the simulation suite:
 
@@ -88,5 +88,6 @@ This repository contains two versions of the simulation suite:
 This code relies on native MATLAB FFT optimizations and requires a full desktop version of MATLAB (R2016b or newer). **It is not compatible with GNU Octave.**
 
 It requires the following toolbox:
-* **Statistics and Machine Learning Toolbox™** * Used for the `fitdist` and `pdf` functions to render the Gaussian fit on the final dashboard.
+* **Statistics and Machine Learning Toolbox™**
+  * Used for the `fitdist` and `pdf` functions to render the Gaussian fit on the final dashboard.
   * Used for the `adtest` (Anderson-Darling) and `lillietest` (Lilliefors) functions in the Validation version.
