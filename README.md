@@ -57,3 +57,36 @@ This code relies on native MATLAB FFT optimizations and requires a full desktop 
 
 It requires the following toolbox:
 * **Statistics and Machine Learning Toolbox™** (specifically for the `fitdist` and `pdf` functions used to render the Gaussian fit on the final histogram).
+
+
+* ## Code Files
+
+This repository contains two versions of the simulation suite:
+
+**1. `BSM_Search_Simulator_Ivan_Cagnani_2026.m` (Standard Version)**
+* **The primary, fast-running script.**
+* Executes a single 25,000-cycle Monte Carlo run using MATLAB's default pseudorandom number generator.
+* Ideal for quick verification and generating the 3-panel presentation dashboard. Highly optimized, it completes the massive quantum simulation and statistical cycles in under two minutes on standard hardware.
+
+**2. `BSM_Search_Simulator_Ivan_Cagnani_2026_with_Statistical_Validation.m` (True-Seed Validation Version)**
+* **The rigorous statistical proof script.**
+* Wraps the Monte Carlo engine in a 36-run master loop, explicitly initializing MATLAB's Mersenne Twister with cryptographically secure, true random integers derived from atmospheric noise (via random.org).
+* Mathematically proves the isolated signal (~12.7σ confidence) is structurally sound and completely free from algorithmic PRNG artifacting using native Anderson-Darling and Lilliefors normality tests.
+* *Note:* Because it executes 900,000 total statistical cycles (36 runs × 25,000 cycles), expect a longer execution time (~5 to 10 minutes depending on the processor).
+
+## How to Run
+
+1. Open either `.m` file in MATLAB.
+2. Click the **Run** button.
+3. The SSFM physics engine will compute the true phases (expect 30 to 120 seconds).
+4. **If running the Standard version:** The Monte Carlo engine will execute the 25,000 cycles (~5 to 30 seconds).
+5. **If running the Validation version:** The script will iterate through the 36 true-seed runs (~5 to 10 minutes) and output the Anderson-Darling and Lilliefors normality results directly to the command window.
+6. The final sensitivity calculations will output, and the 3-panel dashboard will render.
+
+### Dependencies
+
+This code relies on native MATLAB FFT optimizations and requires a full desktop version of MATLAB (R2016b or newer). **It is not compatible with GNU Octave.**
+
+It requires the following toolbox:
+* **Statistics and Machine Learning Toolbox™** * Used for the `fitdist` and `pdf` functions to render the Gaussian fit on the final dashboard.
+  * Used for the `adtest` (Anderson-Darling) and `lillietest` (Lilliefors) functions in the Validation version.
